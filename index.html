@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+ <!-- icon Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+
+
+.content {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 350px;
+}
+
+body { margin: 70px ; }
+
+h1 { font-family: 'Roboto', cursive; 
+font-size: 120px ; color: white; or;
+}
+
+h2  { font-family:'Lobster', cursive;
+font-size: 70px ;
+color: #f4511e ;
+}
+
+h3 { font-family: 'Josefin Slab', serif; font-size: 24px ;
+color : white ;
+}
+
+                /* light box */
+
+p {
+
+  font-family: 'Open Sans', sans-serif; font-size: 18px ;
+}
+
+h4 {
+  font-family: 'Josefin Slab', serif;font-size: 40px
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row1 > .column1 {
+  padding: 0 8px;
+}
+
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column1 {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+
+
+
+img {
+  margin-bottom: -4px;
+}
+
+
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+              /* BUTTON */
+
+.btn {
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("C:/Users/ASUS/Desktop/web2/ehe1/4.jpg") ;
+
+  /* Full height */
+  min-height: 1300px; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-img{
+  height: auto;
+  background-position: center;
+
+}
+
+.container1 {
+  position: auto;
+  text-align: center;
+  color: white;
+  right: 0;
+  bottom: 0;
+  min-width: 50%; 
+  min-height: 50%;
+  object-fit: cover;
+}
+
+.centered {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+  .centered1 {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.centered2 {
+  position: absolute;
+  top: 54.2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+  /* hover BUTTON front page */
+.btn2 {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  paing: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.btn2:hover {opacity: 0.6}
+
+.button3 {border-radius: 8px;text-align: center;width: 400px;
+  height: 40px;
+}
+.button4 {
+border-radius: 8px;
+
+width: 450px;
+height: 40px;
+background-color: #f4511e;
+border: none;
+color: white;
+}
+
+.button5 {border-radius: 8px;text-align: center; width: 150px;
+  height: 40px; }
+
+  .button6 {border-radius: 8px;text-align: center; width: 350px;
+  height: 40px; }
+
+
+#video-boi {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  max-width: 100%; 
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+  .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 103.5%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.6;
+  z-index: 0;
+}
+
+
+
+</style>
+</head>
+
+  </head>
+
+</head>
+
+
+
+    <!-- ảnh -->
+  <div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+     <!-- Chũ -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/bg1.jpg" alt="Los Angeles" width="1920" height="1100">
+      <div class="carousel-caption">
+        <h3>Massage</h3>
+        <p>Enjoy it</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="images/bg2.jpg" alt="Chicago" width="1920" height="1100">
+      <div class="carousel-caption">
+        <h3>Massage</h3>
+        <p>Enjoy it</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="images/bg3.jpg" alt="New York" width="1920" height="1100">
+      <div class="carousel-caption">
+        <h3>Massage</h3>
+        <p>Enjoy it</p>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>  
+<body style="font-family: roboto;" >
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" style="background-color: violet;">
+  <!-- Brand/logo -->
+  <img src="images/logo.png" style="width: 70px;" >
+
+  <!-- Links -->
+<ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+    <a class="nav-link " href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="Service.html">Service</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="aboutus.html">About us</a>
+    <!-- My search -->
+ <!-- My search -->
+  </ul>
+   </ul>
+</nav>
+  </ul>
+</nav>
+
+<div class="container">
+
+   
+   <div class="centered1"><h1 text align="center" >BLEND TO IT</h1></div>
+    <div class="centered2"><h3 text align="center" >We will help you get rid of fatigue</h3></div>
+  
+  
+
+
+ <br> 
+
+
+<div class="centered">
+  <div class="row" align="center" style="padding-bottom: 10px;">
+
+    <div class="col">
+
+       <button class="btn2 button3">ABOUT US</button>
+
+
+    </div>
+
+    <div class="col">
+
+        <button class="btn2 button3">BOOK NOW</button>
+
+   </div>
+   </div>
+ </div>
+
+
+      <!-- Image -->
+<div class="container" align="center">
+     
+  <br><br><br>
+
+<h4 style="text-align:center"> Our Service </h4>
+
+<br>
+     
+
+<div class="row1" align="center" >
+  <div class="column1">
+    <div class="img1">
+    <img src="images/sp1.jpg" style="width:90% ; height: 50%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  <br><p>-------</p>
+   <a style="color: black;" class="nav-link " href="https://urbansteeldesigns.com/">Foot massage</a>
+    
+  </div> </div>
+  <div class="column1">
+    <img src="images/sp2.jpg" style="width:90% ; height: 50%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    <br><p>-------</p>
+  <a style="color: black;" class="nav-link " href="https://urbansteeldesigns.com/">Mask</a>
+
+  </div>
+
+  <div class="column1">
+    <img src="images/sp3.jpg" style="width:90% ; height: 50%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    <br><p>-------</p>
+  <a style="color: black;" class="nav-link " href="https://urbansteeldesigns.com/"> Face massage </a> 
+  </div>
+  <div class="column1">
+    <img src="images/sp4.jpg" style="width:90% ; height: 50%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    <br><p>-------</p>
+   <a style="color: black;" class="nav-link " href="https://urbansteeldesigns.com/"> Exfoliate dead skin </a>
+  </div>
+</div>
+</div>
+
+
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+     </div></div>
+
+     <br><br><br><br>
+         <div class="container">
+      <div class="row">
+        <div class="col" c>
+
+        <h2>Let's listen to our ambition together </h2>
+      </div>
+      <div class="col">
+        <h4><b> Ocean Package</b></h4>
+          <br>
+        <p>General note information about these two ingredients used in skin and body treatments. The caffeine in coffee is rich in antioxidants, making it effective in the fight against premature skin aging conditions such as wrinkles, sun spots and fine lines. Scrubbing with coffee can temporarily reduce the appearance of cellulite and increase collagen production. The health benefits of oranges have long been recognized. High in vitamin C and antioxidants, orange juice strengthens the immune system, detoxifies, aids digestion and promotes healthy skin. It can even help alleviate acne as it contains properties to help fight free radicals. Orange juice can make skin look younger, prevent wrinkles, brightens skin and can be used as a skin toner. </p>
+ <div class="col text-center">
+  <br><br>
+      <button  class=" btn2 button3">Read more</button>
+       
+
+    </div> 
+  </div>
+
+
+</div> </div> </div>
+  <br>
+
+<style>
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+   padding: 30px;
+}
+</style>
+</head>
+<body>
+
+<div class="footer">
+  <div class="row">
+        
+   <div class="col" style="text-align: left;padding-left: 5%;"> <!-- first column -->
+    <br>
+    <p>Adress:  &nbsp 28 Lai Xuan, Thuy Nguyen, Tp.Hai Phong </p> 
+    <p>Phone  &nbsp number: 0382303990</p> 
+    <p>Email: &nbsp Lotusspa@gmail.com</p>
+        </div>
+    <div class="container">
+    <div class="col">  
+  <h5>Sign up for the latest news, product releases and updates…</h5>
+  <form action="/action_page.php">
+  <label for="fname"> </label>
+  <input class="button6" type="text" id="fname" name="fname" placeholder="Enter your email adress" name="email">
+  <input class="button5" type="submit" value="Sign up">
+</form>
+  <h8 style="color:orange;">© 2008-2021 Urban Steel Designs.</h8>
+<br>
+ <!-- icon --> 
+<style>
+.fa {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  width: 36px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 10px;
+  border-radius: 50%
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+
+</style>
+</head>
+<body>
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com/thomastomsax" class="fa fa-facebook"></a>
+<a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+<a href="https://www.google.com/" class="fa fa-google"></a>
+<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+
+      
+</body>
+</div>
+
+</div>
+</body>
+</html>
+
+<body>
+  <!-- 1 code navbar -->
+
+  <!-- 2 code for background -->
+
+  <!-- 3 new section as -->
+  <section>
+    
+  </section>
+</body>
+</html>
